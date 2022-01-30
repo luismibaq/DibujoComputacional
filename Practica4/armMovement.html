@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Arm Movement</title>
+
+		<script type="module" defer src="arm.js"></script>
+
+	</head>
+	<body> 
+
+		<div id="container">
+			<canvas id="webglcanvas" width=800 height=600></canvas>
+		</div>
+		<div id="sliderContainer">
+			Bicep enfrente: <input type="range" min="-1.57" max="1.57" value="0" step="0.01" id="bicepX">
+			bicep lado: <input type="range" min="0" max="3.14" value="0" step="0.01" id="bicepY">
+			Bicep rotacion: <input type="range" min="-1.57" max="1.57" value="0" step="0.01" id="bicepR">
+			<br>
+			Antebrazo enfrente: <input type="range" min="-1.57" max="0" value="0" step="0.01" id="antebrazoX">
+			Antebrazo rotacion: <input type="range" min="0" max="1.57" value="0" step="0.01" id="antebrazoR">
+			<br>
+			Muñeca enfrente: <input type="range" min="-1.57" max="1.57" value="0" step="0.01" id="muñecaX">
+			Muñeca lado: <input type="range" min="-0.5" max="0.5" value="0" step="0.01" id="muñecaY">
+			<br>
+			Escala Escena<input type="range" min="0.5" max="2" value="1" step="0.01" id="slider">
+			Mover Escena X<input type="range" min="-5" max="5" value="1" step="1" id="sliderX">
+			Mover Escena Y<input type="range" min="-5" max="5" value="1" step="1" id="sliderY">
+		</div>
+	</body>
+
+</html>
